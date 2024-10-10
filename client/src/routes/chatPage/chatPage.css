@@ -1,0 +1,60 @@
+.chatPage{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .wrapper{
+    flex:1;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  /* Webkit tabanlı tarayıcılar için */
+  ::-webkit-scrollbar {
+    width: 12px; /* Scrollbar genişliği */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0e0c16; /* Track arka plan rengi */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Parmağın rengi */
+    border-radius: 10px; /* Parmağın köşelerini yuvarlama */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Üzerine gelindiğinde rengi */
+  }
+
+  /* Firefox için */
+  scrollbar-color: #888 #0e0c16; /* Parmağın rengi ve track arka plan rengi */
+  scrollbar-width: thin; /* Scrollbar kalınlığını ayarlama */
+}
+    .chat{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p,li{
+        margin: 10px 0px;
+      }
+
+      .message{
+        padding: 20px;
+
+        &.user{
+          background-color: #2c2937;
+          border-radius: 20px;
+          max-width: 80%;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
