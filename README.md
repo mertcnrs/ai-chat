@@ -29,4 +29,4 @@ Bu proje, Google Gemini AI kullanarak React, Express ve MongoDB teknolojileriyle
 - MongoDB
 - Google Gemini API anahtarı
 - Git
-- 
+
